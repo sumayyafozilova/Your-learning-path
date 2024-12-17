@@ -1,0 +1,85 @@
+@import '../ui/veriables';
+
+.content {
+    background-color: $bc;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: $white;
+            box-shadow: 0 0 2px $black;
+            padding: 14px;
+            border-radius: $radius;
+
+            &__top {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .title {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $black;
+                }
+
+                .subtitle {
+                    width: 60%;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $gray;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                .counter {
+                    font-size: 12px;
+                    color: $gray;
+                }
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        i {
+                            font-size: 1.2rem;
+                            color: $yellow;
+                        }
+
+                        p {
+                            cursor: pointer;
+
+                            i {
+                                font-size: 1rem;
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
